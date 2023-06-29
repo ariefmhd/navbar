@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma;
+}
+
+.container {
+  display: flex; /* jika container 'flex', maka wrapper juga 'flex' */
+  justify-content: center; /* mengatur kotak navbar supaya berada di tengah */
+  width: 100%;
+  height: 100vh; /* vh: vertical height  - ukuran 1 layar full */
+  background-color: lightslategray;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between; /* untuk mengatur element navigation supaya ada di samping kanan */
+  align-items: center;
+  font-size: 20px;
+  padding: 15px;
+  /*width: 800px; <= kotak hanya setengah bagian di tengah */
+  width: 100%; /* <= kotak akan memenuhi. */
+  height: 30px;
+  background-color: black;
+  color: #fff; /* mengatur warna font */
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5); /* menambah shadow pada kotak navbar, values berdasar arah jarum jam (dari atas ke kiri) */
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  padding: 15px;
+}
+
+.firstname {
+  color: #ff1818;
+  font-weight: 900;
+}
+
+.lastname {
+  color: #fff;
+  font-weight: 100;
+  padding-left: 4px; /* supaya tulisan Mhd menjorok sedikit ke kanan */
+}
+
+.navigation {
+  display: flex; /* supaya menyamping */
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation > li {
+  list-style-type: none;
+  padding: 15px; /* memberi jarak antar tulisan pada navigation-bar */
+}
+
+.navigation > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navigation > li > a:hover {
+  background-color: #ff1818;
+  color: #fff;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
